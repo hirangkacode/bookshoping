@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="php.php" method="POST" style="border:1px solid #ccc">
+        <div class="container">
+            <fieldset>
+            <legend>Enter Book Details</legend>
+        
+        <label><b>Book_Id</b></label>
+            <input type="text" placeholder="Type Id No" name="Book_Id" required ><br>
+        <label><b>Book_Name</b></label>
+             <input type="text" placeholder="Type Book Name" name="Book_Name"  required ><br>
+        <label><b>Author_Name</b></label>
+             <input type="text" placeholder="Type Author Name" name="Author_Name"  required ><br>
+        <label><b>Publisher</b></label>
+            <input type="text" placeholder="Type Publisher Name" name="Publisher_Name"  required ><br>
+        <label><b>ISBN</b></label>
+            <input type="text" placeholder="Type ISBN" name="ISBN"  required ><br>
+        <label><b>Price</b></label>
+            <input type="text" placeholder="Type the price" name="Price"  required ><br>
+        <label><b>Available_Quantity</b></label>
+            <input type="text" placeholder="" name="Available_Quantity"  required ><br>
+        <button type="submit" class="signupbtn" value="Submit">SUBMIT</button>
+    
+    </form>
+
+    <form action="php2.php" method="POST" style="border:1px solid #ccc">
+        <fieldset>
+            <legend>Enter Book_Name To Delete Book</legend>
+                <label><b>Book_Id</b> </label>
+            <input type="text" placeholder="Type book Id" name="Bookid"  required ><br>   
+            <button type="submit" class="signupbtn" value="Submit">Delete</button>
+        </form>
+    <form action="php3.php" method="POST" style="border:1px solid #ccc">
+        <fieldset>
+            <legend>Enter Book_id to change the book name</legend>
+            <label><b>Book_Id</b> </label>
+            <input type="text" placeholder="Type Id" name="id"  required ><br> 
+            <legend>Enter the new book name</legend>
+            <label><b>Book name</b> </label>
+            <input type="text" placeholder="Enter name" name="newname"  required ><br> 
+            <button type="submit" class="signupbtn" value="Submit">Update</button>
+        </form>
+</body>
+</html>
